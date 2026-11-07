@@ -1,0 +1,32 @@
+OLHA-A-MENSAGEM // RETROWAVE WEB
+
+REQUISITOS
+- Linux com Python 3.10+ e venv
+- Firefox instalado (Selenium Manager baixa/usa o driver compatível quando necessário)
+- Internet para abrir o WhatsApp Web
+- Para Jarvis: Node.js 18+, PostgreSQL e chave Foursquare válida
+
+INICIAR
+1. Extraia o ZIP.
+2. Execute: chmod +x iniciar.sh
+3. Execute: ./iniciar.sh
+4. O navegador abrirá em http://127.0.0.1:8765
+5. Clique em CONECTAR FIREFOX e autentique o WhatsApp Web pelo QR Code, se solicitado.
+
+WHATSAPP
+- O painel roda localmente e controla o Firefox da própria máquina. Não publique a porta 8765 na internet.
+- CSV: primeira coluna Nome, segunda Telefone. Aceita separador vírgula, ponto e vírgula ou tabulação.
+- Telefones devem conter DDD e, preferencialmente, DDI 55.
+- A mensagem é enviada em sequência. Confirme que os destinatários autorizaram receber mensagens e evite disparos não solicitados.
+- Imagens são enviadas como mídia. Outros anexos usam o seletor de documento do WhatsApp Web; a interface do WhatsApp pode mudar e exigir ajuste dos seletores.
+- Não feche o terminal do painel durante uma operação. Se o Firefox fechar, conecte novamente.
+
+J.A.R.V.I.S.
+O projeto original foi incluído em ./Jarvis. Para habilitar a integração, edite Jarvis/backend/.env com DATABASE_URL PostgreSQL e FOURSQUARE_API_KEY. O primeiro clique em INICIAR J.A.R.V.I.S. prepara dependências e inicia os serviços. A interface abre em http://localhost:5173.
+
+SEGURANÇA E LIMITAÇÕES
+- O painel escuta somente em 127.0.0.1 por padrão.
+- Arquivos anexados ficam temporariamente em ./uploads.
+- Não inclua .env, tokens, cookies ou dados de sessão ao compartilhar o projeto.
+- Esta é uma automação de navegador baseada na interface do WhatsApp Web, não uma API oficial. Mudanças no WhatsApp podem afetar seletores.
+- Teste primeiro com um contato próprio e poucos destinatários.

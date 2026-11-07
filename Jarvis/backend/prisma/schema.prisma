@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id            String        @id @default(uuid())
+  name          String        @unique
+  subcategories Subcategory[]
+  createdAt     DateTime      @default(now())
+}
+
+model Subcategory {
+  id          String   @id @default(uuid())
+  name        String
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  searchTerms String
+  createdAt   DateTime @default(now())
+}
+
+model Lead {
+  id              String   @id @default(uuid())
+  placeId         String   @unique @map("place_id")
+  name            String
+  phone           String?
+  email           String?
+  website         String?
+  address         String?
+  city            String?
+  state           String?
+  country         String   @default("Brasil")
+  rating          Float?   // Mantido para compatibilidade (pode vir nulo)
+  reviewCount     Int?     // Usaremos como tipCount do Foursquare
+  popularity      Int?     // Novo campo do Foursquare (0-100)
+  category        String?
+  mapsUrl         String?  // URL do Foursquare no lugar do Google Maps
+  priority        String   @default("BAIXA")
+  source          String   @default("Foursquare")
+  sourceUrl       String?
+  verificationUrl String?
+  searchDate      DateTime @default(now())
+  observations    String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("leads")
+}
+
+model SearchHistory {
+  id           String   @id @default(uuid())
+  query        String
+  location     String
+  radius       Int
+  categories   String
+  resultsCount Int
+  date         DateTime @default(now())
+}

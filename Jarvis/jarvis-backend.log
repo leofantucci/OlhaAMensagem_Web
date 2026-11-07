@@ -1,0 +1,181 @@
+npm notice run jarvis-backend@1.0.0 dev
+npm notice run nodemon src/server.js
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1941:16)
+    at listenInCluster (node:net:1998:12)
+    at Server.listen (node:net:2103:7)
+    at Function.listen (/home/leof/Área de trabalho/Projetos/OlhaAMensagem_Web/Jarvis/backend/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/leof/Área de trabalho/Projetos/OlhaAMensagem_Web/Jarvis/backend/src/server.js:521:5)
+    at Module._compile (node:internal/modules/cjs/loader:1781:14)
+    at Object..js (node:internal/modules/cjs/loader:1913:10)
+    at Module.load (node:internal/modules/cjs/loader:1505:32)
+    at Function._load (node:internal/modules/cjs/loader:1309:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1977:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.23.2
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+npm notice run jarvis-backend@1.0.0 dev
+npm notice run nodemon src/server.js
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1941:16)
+    at listenInCluster (node:net:1998:12)
+    at Server.listen (node:net:2103:7)
+    at Function.listen (/home/leof/Área de trabalho/Projetos/OlhaAMensagem_Web/Jarvis/backend/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/leof/Área de trabalho/Projetos/OlhaAMensagem_Web/Jarvis/backend/src/server.js:521:5)
+    at Module._compile (node:internal/modules/cjs/loader:1781:14)
+    at Object..js (node:internal/modules/cjs/loader:1913:10)
+    at Module.load (node:internal/modules/cjs/loader:1505:32)
+    at Function._load (node:internal/modules/cjs/loader:1309:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1977:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v22.23.2
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+npm notice run jarvis-backend@1.0.0 dev
+npm notice run nodemon src/server.js
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+🚀 Servidor J.A.R.V.I.S. rodando na porta 3001
+🧹 Banco de dados limpo: 51 leads e 1 históricos removidos.
+🎯 Categoria: Beleza e Estética | 14 subcategorias
+✅ Salão de Beleza: 0 leads
+✅ Barbearia: 20 leads
+✅ Barbeiro: 0 leads
+✅ Cabeleireiro: 19 leads
+✅ Manicure: 8 leads
+✅ Pedicure: 0 leads
+✅ Nail Designer: 8 leads
+✅ Maquiadora: 1 leads
+✅ Design de Sobrancelhas: 14 leads
+✅ Esteticista: 0 leads
+✅ Depilação: 2 leads
+✅ Micropigmentação: 1 leads
+✅ Lash Designer: 1 leads
+✅ Studio de Beleza: 18 leads
+🎯 Categoria: Serviços Automotivos | 8 subcategorias
+✅ Mecânico: 0 leads
+✅ Auto Elétrico: 22 leads
+✅ Funilaria: 1 leads
+✅ Borracharia: 1 leads
+✅ Lava Jato: 1 leads
+✅ Centro Automotivo: 18 leads
+✅ Troca de Óleo: 14 leads
+✅ Alinhamento e Balanceamento: 9 leads
+npm notice run jarvis-backend@1.0.0 dev
+npm notice run nodemon src/server.js
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+🚀 Servidor J.A.R.V.I.S. rodando na porta 3001
+🎯 Categoria: Beleza e Estética | 14 subcategorias
+🧹 Banco de dados limpo: 158 leads e 2 históricos removidos.
+✅ Salão de Beleza: 0 leads
+✅ Barbearia: 16 leads
+✅ Barbeiro: 1 leads
+✅ Cabeleireiro: 16 leads
+✅ Manicure: 5 leads
+🎯 Categoria: Beleza e Estética | 14 subcategorias
+✅ Pedicure: 0 leads
+✅ Salão de Beleza: 3 leads
+✅ Nail Designer: 4 leads
+✅ Barbearia: 10 leads
+✅ Maquiadora: 0 leads
+✅ Barbeiro: 4 leads
+✅ Design de Sobrancelhas: 13 leads
+✅ Cabeleireiro: 18 leads
+✅ Esteticista: 0 leads
+✅ Manicure: 19 leads
+✅ Depilação: 0 leads
+✅ Pedicure: 0 leads
+✅ Micropigmentação: 0 leads
+✅ Nail Designer: 9 leads
+✅ Lash Designer: 0 leads
+✅ Maquiadora: 0 leads
+✅ Studio de Beleza: 4 leads
+✅ Design de Sobrancelhas: 5 leads
+✅ Esteticista: 1 leads
+✅ Depilação: 13 leads
+✅ Micropigmentação: 3 leads
+✅ Lash Designer: 6 leads
+✅ Studio de Beleza: 10 leads
+🎯 Categoria: Advogados | 9 subcategorias
+✅ Advogado Civil: 2 leads
+✅ Advogado Trabalhista: 0 leads
+✅ Advogado Previdenciário: 0 leads
+✅ Advogado de Família: 6 leads
+✅ Advogado Criminal: 0 leads
+✅ Advogado Empresarial: 2 leads
+✅ Advogado Tributário: 0 leads
+✅ Advogado Imobiliário: 1 leads
+✅ Advogado Consumidor: 0 leads
+npm notice run jarvis-backend@1.0.0 dev
+npm notice run nodemon src/server.js
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+🚀 Servidor J.A.R.V.I.S. rodando na porta 3001
+🎯 Categoria: Beleza e Estética | 14 subcategorias
+✅ Salão de Beleza: 2 leads
+✅ Barbearia: 23 leads
+✅ Barbeiro: 1 leads
+✅ Cabeleireiro: 12 leads
+✅ Manicure: 8 leads
+✅ Pedicure: 0 leads
+✅ Nail Designer: 7 leads
+✅ Maquiadora: 0 leads
+✅ Design de Sobrancelhas: 12 leads
+✅ Esteticista: 0 leads
+✅ Depilação: 2 leads
+✅ Micropigmentação: 0 leads
+✅ Lash Designer: 0 leads
+✅ Studio de Beleza: 17 leads
+npm notice run jarvis-backend@1.0.0 dev
+npm notice run nodemon src/server.js
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+🚀 Servidor J.A.R.V.I.S. rodando na porta 3001
